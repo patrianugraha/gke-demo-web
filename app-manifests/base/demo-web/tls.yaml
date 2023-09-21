@@ -1,0 +1,12 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: demo-web-tls
+spec:
+  secretName: demo-web-tls-secret
+  issuerRef:
+    name: letsencrypt-staging
+    kind: ClusterIssuer
+  commonName: demo-web.dev.squantumengine.com
+  dnsNames:
+  - demo-web.dev.squantumengine.com

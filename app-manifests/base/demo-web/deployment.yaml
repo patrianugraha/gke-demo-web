@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo-web
+spec:
+  replicas: 1
+  revisionHistoryLimit: 0
+  template:
+    spec:
+      containers:
+        - name: demo-web
+          image: demo-web
+          imagePullPolicy: Always
+          envFrom:
+            - configMapRef:
+                name: demo-web-configmap
+            - secretRef:
+                 name: demo-web-secret
+          ports:
+            - containerPort: 8888
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "50m"
+            limits:
+              memory: "128Mi"
+              cpu: "100m"
+        
+    

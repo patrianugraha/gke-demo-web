@@ -1,0 +1,22 @@
+commonLabels:
+  env: dev
+  project: demo-web
+
+resources:
+- _dashboard
+- _ingress
+# - _namespace
+- _pgadmin
+- _redis
+- _secrets
+# - _tls
+- demo-web
+- dashboard-admin
+- demo-web-hsm
+- demo-web-callback
+- demo-web-api-services
+- demo-web-api-webadmin
+- demo-web-notification
+
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization

@@ -1,0 +1,21 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- ../../base/demo-web
+
+configMapGenerator:
+- envs:
+  - app.env
+  name: demo-web-configmap
+  
+commonLabels:
+  app: demo-web
+  database: disabled
+  tier: frontend
+
+images:
+- name: demo-web
+  newName: asia.gcr.io/stg-infra-306502/demo-web/demo-web
+  newTag: demo-web-514-PRE-20220802-d209489b
+
+namespace: demo-web-stg
