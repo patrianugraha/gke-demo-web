@@ -14,8 +14,6 @@ spec:
           envFrom:
             - configMapRef:
                 name: demo-web-configmap
-            - secretRef:
-                 name: demo-web-secret
           ports:
             - containerPort: 8888
           resources:
