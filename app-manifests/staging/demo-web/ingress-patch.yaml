@@ -1,6 +1,6 @@
 - op: replace
-  path: "/spec/tls/hosts/0"
+  path: "/spec/tls/hosts"
   value: "demo-web-stg.squantumengine.com"
 - op: replace
-  path: "/metadata/name"
-  value: "demo-web-stg-ingress"
+  path: "/spec/tls/secretName"
+  value: "demo-web-stg-tls-secret"
