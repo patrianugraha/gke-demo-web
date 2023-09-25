@@ -11,4 +11,4 @@ spec:
   tls:
   - hosts:
     - demo-web-dev.squantumengine.com
-    secretName: demo-web-tls-secret
+    secretName: demo-web-stg-tls-secret
