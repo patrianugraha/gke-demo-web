@@ -15,7 +15,21 @@ commonLabels:
 
 images:
 - name: demo-web
-  newName: asia.gcr.io/stg-infra-306502/demo-web/demo-web
-  newTag: demo-web-514-PRE-20220802-d209489b
+  newName: asia-southeast2-docker.pkg.dev/sqe-non-prod/devops/dev/demo-web
+  newTag: 78faae49f93a95f33ca72804558f164fb781e72f
+
+patches:
+- path: ingress-patch.yaml
+  target:
+    group: networking.k8s.io
+    kind: Ingress
+    name: vdemo-web-ingress
+    version: v1
+- path: tls-patch.yaml
+  target:
+    group: cert-manager.io
+    kind: Certificate
+    name: demo-web-tls
+    version: v1
 
 namespace: demo-web-stg
