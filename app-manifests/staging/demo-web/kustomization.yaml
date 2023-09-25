@@ -10,8 +10,6 @@ configMapGenerator:
   
 commonLabels:
   app: demo-web
-  database: disabled
-  tier: frontend
 
 images:
 - name: demo-web
