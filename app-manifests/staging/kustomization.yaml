@@ -3,7 +3,7 @@ commonLabels:
   project: demo-web
 
 resources:
-- demo-web
+# - demo-web
 
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
