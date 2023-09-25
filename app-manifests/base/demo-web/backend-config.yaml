@@ -3,6 +3,8 @@ kind: BackendConfig
 metadata:
   name: demo-web-config
 spec:
+  securityPolicy:
+    name: "sqe-non-production-be-cloud-armor"
   timeoutSec: 1800
   connectionDraining:
     drainingTimeoutSec: 1800
