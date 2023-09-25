@@ -5,7 +5,7 @@ metadata:
 spec:
   defaultBackend:
         service:
-          name: demo-web
+          name: demo-web-service
           port:
             number: 8888
   tls:
