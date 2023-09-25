@@ -2,7 +2,7 @@
   path: "/spec/secretName/0"
   value: "demo-web-stg-tls-secret"
 - op: replace
-  path: "/spec/commonName/0"
+  path: "/spec/commonName"
   value: "demo-web-stg.squantumengine.com"
 - op: replace
   path: "/spec/dnsNames/0"
