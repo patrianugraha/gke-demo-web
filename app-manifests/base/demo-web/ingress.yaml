@@ -10,4 +10,4 @@ spec:
             number: 8888
   tls:
   - hosts: demo-web-dev.squantumengine.com
-    secretName: demo-web-stg-tls-secret
+    secretName: demo-web-tls-secret
