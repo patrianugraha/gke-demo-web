@@ -1,5 +1,5 @@
 - op: replace
-  path: "/spec/tls/hosts"
+  path: "/spec/tls/hosts/0"
   value: "demo-web-stg.squantumengine.com"
 - op: replace
   path: "/spec/tls/secretName"
