@@ -21,7 +21,7 @@ patches:
   target:
     group: networking.k8s.io
     kind: Ingress
-    name: vdemo-web-ingress
+    name: demo-web-ingress
     version: v1
 - path: tls-patch.yaml
   target:
