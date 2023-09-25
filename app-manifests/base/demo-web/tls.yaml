@@ -7,6 +7,6 @@ spec:
   issuerRef:
     name: letsencrypt-staging
     kind: ClusterIssuer
-  commonName: demo-web-dev.squantumengine.com
+  commonName: demo-web.dev.squantumengine.com
   dnsNames:
   - demo-web.dev.squantumengine.com
