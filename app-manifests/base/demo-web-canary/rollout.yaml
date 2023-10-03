@@ -7,7 +7,7 @@ spec:
   revisionHistoryLimit: 0
   selector:
     matchLabels:
-      app:  demo-web-canary
+      app:  demo-web-canary-service
   template:
     metadata:
       labels:
