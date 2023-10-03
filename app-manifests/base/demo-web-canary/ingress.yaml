@@ -17,7 +17,7 @@ spec:
               service:
                 name: demo-web-canary-service
                 port:
-                  number: 9000
+                  number: 8888
   tls:
   - hosts: 
     - demo-web-canary-dev.squantumengine.com
