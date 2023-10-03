@@ -7,7 +7,7 @@ spec:
   revisionHistoryLimit: 0
   selector:
     matchLabels:
-      app:  demo-web-canary-service
+      app:  demo-web-canary
   template:
     metadata:
       labels:
@@ -31,7 +31,7 @@ spec:
               cpu: "100m"
   strategy:
     canary:
-      canaryService: demo-web-canary
+      canaryService: demo-web-canary-service
       steps:
       - setWeight: 20
       - pause: {}
