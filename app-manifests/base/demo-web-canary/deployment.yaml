@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo-web-canary
+spec:
+  replicas: 1
+  revisionHistoryLimit: 0
+  template:
+    spec:
+      containers:
+        - name: demo-web-canary
+          image: demo-web-canary
+          imagePullPolicy: Always
+          envFrom:
+            - configMapRef:
+                name: demo-web-canary-configmap
+          ports:
+            - containerPort: 8888
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "50m"
+            limits:
+              memory: "128Mi"
+              cpu: "100m"
+        
+    
