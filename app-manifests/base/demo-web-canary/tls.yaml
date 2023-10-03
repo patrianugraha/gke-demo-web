@@ -9,4 +9,4 @@ spec:
     kind: ClusterIssuer
   commonName: demo-web-canary-dev.squantumengine.com
   dnsNames:
-  - demo-web-dev.squantumengine.comdemo-web-canary-dev.squantumengine.com
+  - demo-web-canary-dev.squantumengine.com
