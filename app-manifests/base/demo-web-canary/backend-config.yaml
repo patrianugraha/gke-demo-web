@@ -1,0 +1,16 @@
+apiVersion: cloud.google.com/v1
+kind: BackendConfig
+metadata:
+  name: demo-web-canary-config
+spec:
+  # securityPolicy:
+  #   name: "sqe-non-production-be-cloud-armor"
+  timeoutSec: 1800
+  connectionDraining:
+    drainingTimeoutSec: 1800
+  healthCheck:
+    checkIntervalSec: 10
+    timeoutSec: 10
+    type: HTTP
+    requestPath: /app/healthcheck
+    port: 8888
