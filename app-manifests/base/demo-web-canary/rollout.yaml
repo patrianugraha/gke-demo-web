@@ -19,7 +19,7 @@ spec:
           imagePullPolicy: Always
           envFrom:
             - configMapRef:
-                name: demo-web-canary-configmap
+                name: demo-web-canary-configmap-8gtg8f5b99
           ports:
             - containerPort: 8888
           resources:
