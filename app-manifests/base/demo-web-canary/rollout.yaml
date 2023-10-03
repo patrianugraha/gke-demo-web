@@ -5,6 +5,9 @@ metadata:
 spec:
   replicas: 1
   revisionHistoryLimit: 0
+  selector:
+    matchLabels:
+      app:  demo-web-canary
   template:
     spec:
       containers:
