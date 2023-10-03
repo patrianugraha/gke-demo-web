@@ -9,6 +9,9 @@ spec:
     matchLabels:
       app:  demo-web-canary
   template:
+    metadata:
+      labels:
+        app: demo-web-canary
     spec:
       containers:
         - name: demo-web-canary
