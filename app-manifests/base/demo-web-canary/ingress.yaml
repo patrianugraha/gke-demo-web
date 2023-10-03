@@ -4,7 +4,7 @@ metadata:
   name: demo-web-canary-ingress
   annotations:
     cert-manager.io/cluster-issuer: "letsencrypt-staging"
-    kubernetes.io/ingress.class: nginx-public
+    kubernetes.io/ingress.class: nginx-private
     nginx.ingress.kubernetes.io/proxy-body-size: "50m"
 spec:
   rules:
