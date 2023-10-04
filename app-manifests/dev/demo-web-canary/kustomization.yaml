@@ -16,5 +16,8 @@ images:
 - name: demo-web-canary
   newName: asia-southeast2-docker.pkg.dev/sqe-non-prod/devops/dev/demo-web
   newTag: 78faae49f93a95f33ca72804558f164fb781e72f
+- name: demo-web-canary-dev
+  newName: asia-southeast2-docker.pkg.dev/sqe-non-prod/devops/dev/demo-web
+  newTag: 1e351bf24e950a3e3c10e5df3ed642d9ed0b88ff
 
 namespace: demo-web-canary-dev
