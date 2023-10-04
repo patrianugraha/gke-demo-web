@@ -15,7 +15,7 @@ commonLabels:
 images:
 - name: demo-web-canary
   newName: asia-southeast2-docker.pkg.dev/sqe-non-prod/devops/dev/demo-web
-  newTag: 374504bd8f419bd23834a893e762791b630a0219
+  newTag: 0265316579f417ecc882ecd2b7d9953fab3ac9f5
 - name: demo-web-canary-dev
   newName: asia-southeast2-docker.pkg.dev/sqe-non-prod/devops/dev/demo-web
   newTag: a1b4c01d9cfb30160b7b65c8c18c68583b334b71
