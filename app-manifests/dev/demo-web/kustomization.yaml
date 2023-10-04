@@ -15,6 +15,6 @@ commonLabels:
 images:
 - name: demo-web
   newName: asia-southeast2-docker.pkg.dev/sqe-non-prod/devops/dev/demo-web
-  newTag: 1e351bf24e950a3e3c10e5df3ed642d9ed0b88ff
+  newTag: a1b4c01d9cfb30160b7b65c8c18c68583b334b71
 
 namespace: demo-web-dev
