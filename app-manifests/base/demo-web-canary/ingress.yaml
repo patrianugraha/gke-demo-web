@@ -6,6 +6,8 @@ metadata:
     cert-manager.io/cluster-issuer: "letsencrypt-staging"
     kubernetes.io/ingress.class: nginx-private
     nginx.ingress.kubernetes.io/proxy-body-size: "50m"
+    nginx.ingress.kubernetes.io/canary-by-header: canary
+    nginx.ingress.kubernetes.io/canary-by-header-value: yep
 spec:
   rules:
     - host: demo-web-canary-dev.squantumengine.com
@@ -15,7 +17,7 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: demo-web-canary-service
+                name: demo-web-stable
                 port:
                   number: 8888
   tls:

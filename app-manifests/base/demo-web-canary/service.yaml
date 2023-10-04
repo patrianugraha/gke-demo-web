@@ -3,7 +3,22 @@ kind: Service
 metadata:
   # annotations:
   #   cloud.google.com/backend-config: '{"default": "demo-web-config"}'
-  name: demo-web-canary-service
+  name: demo-web-canary
+spec:
+  ports:
+    - port: 8888
+      protocol: TCP
+      targetPort: 8888
+  selector:
+    app: demo-web-canary
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  # annotations:
+  #   cloud.google.com/backend-config: '{"default": "demo-web-config"}'
+  name: demo-web-stable
 spec:
   ports:
     - port: 8888
