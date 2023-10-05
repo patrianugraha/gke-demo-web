@@ -1,0 +1,12 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: k8s-demo-web-tls
+spec:
+  secretName: k8s-demo-web-tls-secret
+  issuerRef:
+    name: letsencrypt-staging
+    kind: ClusterIssuer
+  commonName: k8s-dashboard-dev.squantumengine.com
+  dnsNames:
+  - k8s-dashboard-dev.squantumengine.com
