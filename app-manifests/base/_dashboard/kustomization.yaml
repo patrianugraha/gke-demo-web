@@ -4,3 +4,4 @@ resources:
 - deployment.yaml
 - role.yaml
 - rolebinding.yaml
+- tls.yaml
