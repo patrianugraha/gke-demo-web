@@ -10,7 +10,7 @@ configMapGenerator:
   
 commonLabels:
   app: demo-web-canary
-wkwkw 
+
 
 images:
 - name: demo-web-canary
