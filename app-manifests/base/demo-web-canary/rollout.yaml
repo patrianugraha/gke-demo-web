@@ -41,9 +41,9 @@ spec:
             canary-by-header-value: yep
       steps:
       - setWeight: 50
-      - pause: {duration: 600}
+      - pause: {duration: 180}
       - setWeight: 100
-      - pause: {duration: 100}
+      - pause: {duration: 300}
       # steps:
       # - setWeight: 10
       # - pause: {}
