@@ -1,0 +1,13 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: k8-dashboard-ingress
+spec:
+  defaultBackend:
+        service:
+          name: kubernetes-dashboard
+          port:
+            number: 80
+  tls:
+  - hosts: k8s-dashboard-dev.squantumengine.com
+    secretName: k8s-demo-web-tls-secret
