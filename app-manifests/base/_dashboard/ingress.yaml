@@ -9,5 +9,6 @@ spec:
           port:
             number: 80
   tls:
-  - hosts: k8s-dashboard-dev.squantumengine.com
+  - hosts: 
+    - k8s-dashboard-dev.squantumengine.com
     secretName: k8s-demo-web-tls-secret
