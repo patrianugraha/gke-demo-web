@@ -7,6 +7,6 @@ spec:
   issuerRef:
     name: letsencrypt-staging
     kind: ClusterIssuer
-  commonName: k8s-dashboard-dev.squantumengine.com
+  commonName: k8s-dashboard-demo-web-dev.squantumengine.com
   dnsNames:
-  - k8s-dashboard-dev.squantumengine.com
+  - k8s-dashboard-demo-web-dev.squantumengine.com

@@ -1,14 +1,23 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: k8-dashboard-ingress
+  name: k8s-dashboard-ingress
+  annotations:
+    cert-manager.io/cluster-issuer: "letsencrypt-staging"
+    kubernetes.io/ingress.class: nginx-private
 spec:
-  defaultBackend:
-        service:
-          name: kubernetes-dashboard
-          port:
-            number: 80
+  rules:
+    - host: k8s-dashboard-demo-web-dev.squantumengine.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: kubernetes-dashboard
+                port:
+                  number: 80
   tls:
   - hosts: 
-    - k8s-dashboard-dev.squantumengine.com
+    - k8s-dashboard-demo-web-dev.squantumengine.com
     secretName: k8s-demo-web-tls-secret
