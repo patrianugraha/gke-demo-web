@@ -11,4 +11,4 @@ patches:
       name: kubernetes-dashboard
       version: v1
 
-namespace: demo-web-canary-dev
+namespace: demo-web-dev

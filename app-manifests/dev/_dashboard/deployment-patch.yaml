@@ -1,6 +1,6 @@
 - op: replace
   path: "/spec/template/spec/containers/0/args/0"
-  value: "--namespace=demo-web-canary-dev"
+  value: "--namespace=demo-web-dev"
 - op: replace
   path: "/spec/template/spec/containers/0/args/1"
-  value: '--system-banner="This is demo-web-canary-dev cluster, please type in demo-web-canary-dev in the namespace below"'
+  value: '--system-banner="This is demo-web-dev cluster, please type in demo-web-dev in the namespace below"'
