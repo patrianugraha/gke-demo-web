@@ -6,6 +6,7 @@ resources:
   - backend-config.yaml
   - ingress.yaml
   - tls.yaml
+  - external-secret.yaml
 
 commonLabels:
   app: demo-web

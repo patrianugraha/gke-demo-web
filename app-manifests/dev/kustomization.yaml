@@ -6,6 +6,7 @@ resources:
 - demo-web
 - demo-web-canary
 - _dashboard
+- _secrets
 
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
