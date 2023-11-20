@@ -4,7 +4,7 @@ commonLabels:
 
 resources:
 - demo-web
-- demo-web-canary
+# - demo-web-canary
 - _dashboard
 - _secrets
 
